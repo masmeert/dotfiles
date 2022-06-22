@@ -1,6 +1,3 @@
-# apps... but better
-alias ls=lsd
-
 # git
 abbr -a gs  git status -sb
 abbr -a ga  git add
@@ -38,3 +35,4 @@ alias lt='ls --tree'
 
 # misc
 alias reload='exec fish'
+alias lvim='/home/mass/.local/bin/lvim'
