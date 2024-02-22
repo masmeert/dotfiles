@@ -1,0 +1,31 @@
+# Taps
+tap 'stripe/stripe-cli'
+
+# Binaries
+brew 'awscli'
+brew 'bash' # Latest Bash version
+brew 'coreutils' # Those that come with macOS are outdated
+brew 'ffmpeg'
+brew 'gh'
+brew 'git'
+brew 'grep'
+brew 'httpie'
+brew 'croc'
+brew 'zsh-syntax-highlighting'
+brew 'zsh-autosuggestions'
+brew 'stripe/stripe-cli/stripe'
+brew 'koekeishiya/formulae/yabai'
+brew 'koekeishiya/formulae/skhd'
+
+# Development
+brew 'node'
+brew 'yarn'
+
+# Apps
+cask 'discord'
+cask 'docker'
+cask 'figma'
+cask 'google-chrome'
+cask 'raycast'
+cask 'slack'
+cask 'visual-studio-code'

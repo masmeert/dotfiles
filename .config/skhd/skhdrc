@@ -1,0 +1,63 @@
+ctrl + alt - left : yabai -m window --focus west
+ctrl + alt - down : yabai -m window --focus south
+ctrl + alt - up : yabai -m window --focus north
+ctrl + alt - right : yabai -m window --focus east
+
+# Moving windows
+ctrl + shift + alt - left : yabai -m window --warp west
+ctrl + shift + alt - down : yabai -m window --warp south
+ctrl + shift + alt - up : yabai -m window --warp north
+ctrl + shift + alt - right : yabai -m window --warp east
+
+# Equalize size of windows
+ctrl + alt - e : yabai -m space --balance
+
+# Enable / Disable gaps in current workspace
+ctrl + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+# Rotate windows clockwise and anticlockwise
+ctrl + alt - r         : yabai -m space --rotate 270
+ctrl + shift + alt - r : yabai -m space --rotate 90
+
+# Rotate on X and Y Axis
+ctrl + alt - x : yabai -m space --mirror x-axis
+ctrl + alt - y : yabai -m space --mirror y-axis
+
+# Set insertion point for focused container
+cmd + lctrl + alt + shift - h : yabai -m window --insert west
+cmd + lctrl + alt + shift - j : yabai -m window --insert south
+cmd + lctrl + alt + shift - k : yabai -m window --insert north
+cmd + lctrl + alt + shift - l : yabai -m window --insert east
+
+# Float / Unfloat window
+shift + alt - space : \
+    yabai -m window --toggle float; \
+
+
+# focus display
+ctrl + alt - 1 : yabai -m display --focus 1
+ctrl + alt - 2 : yabai -m display --focus 2
+ctrl + alt - s : yabai -m display --focus next || yabai -m display --focus first; yabai -m space --focus next
+
+# Restart Yabai
+cmd + ctrl + alt - r : \
+    /usr/bin/env osascript <<< \
+        "display notification \"Restarting Yabai\" with title \"Yabai\""; \
+    launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+# Close active application
+ctrl + alt + cmd - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+
+# Make window native fullscreen
+cmd + ctrl + alt - return : yabai -m window --toggle zoom-fullscreen
+
+# Move focus container to workspace 
+# TODO: needs work 
+shift + alt - m : yabai -m window --space last; yabai -m space --focus last
+shift + alt - p : yabai -m window --space prev; yabai -m space --focus prev
+shift + alt - n : yabai -m window --space next; yabai -m space --focus next
+shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1; yabai -m display --focus 1
+shift + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2; yabai -m display --focus 1
+shift + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3; yabai -m display --focus 1
+shift + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4; yabai -m display --focus 2
+shift + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5; yabai -m display --focus 2

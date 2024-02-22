@@ -1,0 +1,24 @@
+github-copilot
+configstore
+*node_modules
+*.tmp*
+
+# ITERM
+AppSupport
+
+# NVIM
+plugin
+custom
+spell
+ftplugin
+syntax
+coc-settings.json
+.luarc.json
+lazy-lock.json
+after
+**/.DS_Store
+!/lua/custom/
+
+# ZED
+conversations
+embeddings
