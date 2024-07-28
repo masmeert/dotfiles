@@ -1,0 +1,42 @@
+# 'brew tap'
+tap "homebrew/cask"
+
+# 'brew install'
+brew "git"
+brew "neovim"
+brew "yadm"
+brew "starship"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "python3"
+brew "python@3.10"
+brew "python@3.8"
+brew "virtualenv"
+brew "virtualenvwrapper"
+
+# set arguments for all 'brew install --cask' commands
+cask_args appdir: "~/Applications", require_sha: true
+
+# 'brew install --cask'
+cask "raycast"
+cask "aldente"
+cask "iterm2"
+cask "anki"
+cask "google-chrome"
+cask "orbstack"
+cask "chatgpt"
+
+# 'mas install'
+mas "Tailscale", id: 1475387142
+mas "Slack for Desktop", id: 803453959
+mas "Next Meeting", id: 1017470484
+
+# 'vscode --install-extension'
+vscode "GitHub.codespaces"
+vscode "RaillyHugo.one-hunter"
+vscode "jacobwgillespie.minimal-icons"
+vscode "supermaven.supermaven"
+vscode "esbenp.prettier-vscode"
+vscode "dbaeumer.vscode-eslint"
+vscode "Vue.volar"
+vscode "ms-python.python"
