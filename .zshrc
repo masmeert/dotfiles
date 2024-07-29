@@ -1,3 +1,6 @@
+# Aliases
+alias cd="z"
+
 # Configuration for virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
@@ -10,6 +13,12 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # starship
 eval "$(starship init zsh)"
+
+eval "$(zoxide init zsh)"
+
+zstyle ':completion:*:*:make:*' tag-order 'targets'
+
+autoload -U compinit && compinit
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
