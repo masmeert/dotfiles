@@ -25,6 +25,7 @@ cask "anki"
 cask "google-chrome"
 cask "orbstack"
 cask "chatgpt"
+cask "linearmouse"
 
 # 'mas install'
 mas "Tailscale", id: 1475387142
