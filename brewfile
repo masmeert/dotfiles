@@ -17,6 +17,7 @@ brew "virtualenv"
 brew "virtualenvwrapper"
 brew "jesseduffield/lazygit/lazygit"
 brew "jesseduffield/lazydocker/lazydocker"
+brew "pnpm"
 
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "~/Applications", require_sha: true
