@@ -28,6 +28,8 @@ cask "google-chrome"
 cask "orbstack"
 cask "chatgpt"
 cask "linearmouse"
+cask "spotify"
+cask "linear-linear"
 
 # 'mas install'
 mas "Tailscale", id: 1475387142
