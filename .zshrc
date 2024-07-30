@@ -1,5 +1,6 @@
 # Aliases
 alias cd="z"
+alias pnpx="pnpm dlx"
 
 # Configuration for virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
