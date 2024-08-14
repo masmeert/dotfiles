@@ -10,7 +10,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "fzf"
 brew "zoxide"
-brew "python3"
+brew "python@3.12"
+brew "python@3.11"
 brew "python@3.10"
 brew "python@3.8"
 brew "virtualenv"
@@ -19,13 +20,16 @@ brew "jesseduffield/lazygit/lazygit"
 brew "jesseduffield/lazydocker/lazydocker"
 brew "pnpm"
 brew "obsidian"
+brew "spotify-tui"
 
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "~/Applications", require_sha: true
 
 # 'brew install --cask'
+cask "visual-studio-code"
 cask "raycast"
 cask "aldente"
+cask "alt-tab"
 cask "iterm2"
 cask "anki"
 cask "google-chrome"
@@ -34,18 +38,28 @@ cask "chatgpt"
 cask "linearmouse"
 cask "spotify"
 cask "linear-linear"
+cask "webstorm"
+cask "pycharm"
 
 # 'mas install'
 mas "Tailscale", id: 1475387142
 mas "Slack for Desktop", id: 803453959
 mas "Next Meeting", id: 1017470484
+mas "Spending Tracker - Money Flow", id: 900890647
 
 # 'vscode --install-extension'
-vscode "GitHub.codespaces"
 vscode "RaillyHugo.one-hunter"
-vscode "jacobwgillespie.minimal-icons"
-vscode "supermaven.supermaven"
+vscode "jdinhlife.gruvbox"
+vscode "MichaelZhou.fleet-theme"
+vscode "ms-vscode.vscode-typescript-next"
 vscode "esbenp.prettier-vscode"
-vscode "dbaeumer.vscode-eslint"
-vscode "Vue.volar"
+vscode "ms-python.vscode-pylance"
 vscode "ms-python.python"
+vscode "dbaeumer.vscode-eslint"
+vscode "github.vscode-github-actions"
+vscode "lokalise.i18n-ally"
+vscode "YoavBls.pretty-ts-errors"
+vscode "ms-python.debugpy"
+vscode "bradlc.vscode-tailwindcss"
+vscode "wayou.vscode-todo-highlight"
+vscode "Vue.volar"
