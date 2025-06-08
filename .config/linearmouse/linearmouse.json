@@ -1,35 +1,74 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "pointer" : {
-        "acceleration" : 0.9,
-        "disableAcceleration" : true,
-        "speed" : 0.0689655172413792768
-      },
       "if" : {
         "device" : {
-          "productID" : "0xc547",
           "category" : "mouse",
-          "productName" : "USB Receiver",
-          "vendorID" : "0x46d"
+          "productName" : "Razer Viper V3 Pro",
+          "vendorID" : "0x1532",
+          "productID" : "0xc1"
         }
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "productID" : "0xc094",
-          "vendorID" : "0x46d",
-          "serialNumber" : "6584DE5C",
-          "category" : "mouse",
-          "productName" : "PRO X Wireless"
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
         }
       },
       "pointer" : {
         "disableAcceleration" : true,
         "acceleration" : 0.9
       }
+    },
+    {
+      "if" : {
+        "app" : "com.lujjjh.LinearMouse",
+        "device" : {
+          "productID" : "0xc1",
+          "productName" : "Razer Viper V3 Pro",
+          "category" : "mouse",
+          "vendorID" : "0x1532"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.85
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "Razer Viper V3 Pro",
+          "serialNumber" : "000000000000",
+          "category" : "mouse",
+          "productID" : "0xc0",
+          "vendorID" : "0x1532"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.9,
+        "disableAcceleration" : true
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "category" : "trackpad",
+          "vendorID" : "0x0",
+          "productID" : "0x0"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }
